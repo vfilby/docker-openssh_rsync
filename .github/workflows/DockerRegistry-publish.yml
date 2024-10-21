@@ -1,4 +1,4 @@
-name: docker-openssh_rsync
+name: Publish to Docker Registry
 
 on:
   push:
