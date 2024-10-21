@@ -24,8 +24,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag vfilby/docker-openssh_rsync:${TIMESTAMP}
 
-    - name: Push the Docker image with timestamp tag
+    - name: Push the Docker image
       run: docker push vfilby/docker-openssh_rsync:${TIMESTAMP}
-
-    - name: Push the Docker image with latest tag
-      run: docker push vfilby/docker-openssh_rsync
